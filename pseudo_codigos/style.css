@@ -1,0 +1,13 @@
+:root{
+    --cor-texto-body:rgb(200,5,6);
+    --cor-de-fundo: rgb(100,100,100);
+
+}
+
+header{
+    color: var(--cor-texto-body);
+}
+
+main{
+    background-color: var(--cor-de-fundo);
+}
