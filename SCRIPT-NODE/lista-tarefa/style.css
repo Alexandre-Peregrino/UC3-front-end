@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fundo{
+    background-image: linear-gradient(45deg,rgb(209, 199, 199), rgb(20, 220, 40));
+    height: 100vh;
+    color: rgb(174, 43, 43);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.grade{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+}
+label{
+    margin: 10px;
+    padding: 10px;
+    color: black;
+}
+input{
+    margin-left: 10px;
+    padding: 10px;
+}

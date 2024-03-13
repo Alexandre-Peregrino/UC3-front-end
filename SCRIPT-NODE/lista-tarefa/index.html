@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA DE TAREFAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="fundo">
+                <h1>Lista de Tarefas</h1>
+                <div class="grade">
+                    <label for="tarefa">Digite a Tarefa</label>
+                    <input type="text" id="tarefa" name="tarefa">    
+                    <button type="submit" id="adicionar">Adicionar</button>
+                </div>        
+            </div>
+        </section>
+        <section>
+            <ul id="lista"></ul>
+        </section>
+    </main>
+</body>
+    <script>
+        let lista = document.getElementById('lista')
+        let tarefa = document.getElementById('tarefa')
+        let botao = document.getElementById('adicionar')
+
+        function add(event){
+            event.preventDefalt()
+            let item = document.createElement('li')
+            item.textContent = tarefa.Value
+            item.addEventListener('click', concluido)
+            lista.appendChild(item)
+            tarefa.value = ""
+        }
+        botao.addEventListener('click', add)  
+    </script>
+</html>
