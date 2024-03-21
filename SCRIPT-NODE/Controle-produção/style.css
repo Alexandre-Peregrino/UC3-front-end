@@ -1,0 +1,102 @@
+.calendar {
+    font-family: Arial, sans-serif;
+    max-width: 600px; /* Ajuste o tamanho máximo do calendário conforme necessário */
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.month-name {
+    font-size: 1.5em;
+}
+
+.weekdays {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.weekdays div {
+    width: calc(100% / 7);
+    text-align: center;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.days div {
+    width: calc(100% / 10);
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Estilos adicionais para o contêiner de tarefas */
+.task-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.task-box .task-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.task-box .task-content {
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+.task-saved {
+    background-color: #10d010; /* Cor de fundo para indicar que as tarefas foram salvas */
+}
+.task-text-saved {
+    background-color: #c5c513; /* Cor de fundo para indicar que a tarefa foi salva */
+}
+
+.weekdays {
+    display: flex;
+    justify-content: space-between; /* Distribui igualmente os dias da semana */
+    margin-bottom: 10px;
+}
+
+.weekdays div {
+    width: calc(100% / 8); /* Ajusta o tamanho das células */
+    text-align: center;
+    border: 1px solid #ccc; /* Adiciona bordas */
+}
+
+
+
+
+

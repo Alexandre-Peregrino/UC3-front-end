@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calendar">
+        <div class="month">
+            <div class="prev">&#10094;</div>
+            <div class="next">&#10095;</div>
+            <div class="month-name">Março 2024</div>
+        </div>
+        <div class="weekdays">
+            
+            <div>D</div>
+            <div>S</div>
+            <div>T</div>
+            <div>Q</div>
+            <div>Q</div>
+            <div>S</div>
+            <div>S</div>
+            
+        </div>
+        <div class="days">
+        </div>
+    </div>
+    <div id="taskBox" class="task-box hidden">
+        <div class="task-title">Tarefas do Dia</div>
+        <div class="task-content">Nenhuma tarefa para este dia.</div>
+        <div class="task-form">
+            <label><input type="checkbox"> Plantar</label><br>
+            <label><input type="checkbox"> Irrigar</label><br>
+            <label><input type="checkbox"> Adubar</label><br>
+            <label><input type="checkbox"> Dedetizar</label><br>
+            <label><input type="checkbox"> Colher</label><br>
+        </div>
+        <button id="saveTasksButton">Salvar Tarefas</button>
+        <button id="closeTaskBoxButton">Fechar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

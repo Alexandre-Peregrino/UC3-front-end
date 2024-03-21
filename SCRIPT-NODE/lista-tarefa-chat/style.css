@@ -32,3 +32,15 @@ button{
     border:1px solid ;
     border-radius: 5px;
 }
+.list-section{
+    max-width: 100%;
+}
+ul{
+    width: 100%;
+}
+ul li{
+    display: flex;
+    width: 100%;
+    padding-left: 90.3px;
+    justify-content: space-around
+}

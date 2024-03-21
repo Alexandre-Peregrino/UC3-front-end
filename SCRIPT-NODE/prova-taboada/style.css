@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(72, 2, 2);
+}
+div.container{
+    width: 100%;
+    max-width: 450px;
+    background-color: rgb(129, 46, 46);
+    padding: 15px 2%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 3px solid red;
+}
+
+div.container h1{
+    font-size: 25px;
+    padding: 5px 0;
+    color: rgb(188, 171, 171);
+    font-weight: lighter;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+}
+
+div.container input{
+    width: 100%;
+    max-width: 50px;
+    padding: 5px 0px;
+    font-size: 16px;
+    text-align: center;
+    outline: 0;
+    border: 2px solid red;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    line-height: 10px;
+}
+div.container input:focus{
+    border: 1px solid slateblue;
+}
+
+div.container input::-webkit-inner-spin-button{
+    display: none;
+}
+
+div.tabuado{
+    width: 100%;
+    text-align: center;
+    color: rgb(80, 80, 80);
+    font-size: 16px;
+    line-height: 32px;
+    margin: 15px 0;
+}
+div.container button{
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1 solid black;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    max-height: 40px;
+}
