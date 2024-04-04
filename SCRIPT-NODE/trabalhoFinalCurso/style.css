@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c4c1f5;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: left;
+    width: 90vw;
+}
+
+input{
+   width: 200px;
+}
+
+textarea{
+    width: 300px;
+    height: 150px;
+}
+
+h5{
+    margin-top: 1rem;
+}
+
+h2{
+    margin-bottom: 1rem;
+}
+
+/* CSS para o botão */
+button {
+    
+    border: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+    background-color: rgb(8, 148, 241);
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.2s; /* Transição suave de cor de fundo */
+}
+
+/* Destacar ao passar o mouse */
+button:hover {
+    background-color: #56339e; /* Cor de fundo alterada */
+    box-shadow: 0px 6px 8px black;
+    color: black;
+} 
+
+/* Destacar ao clicar */
+button:active {
+    background-color: #000803; /* Cor de fundo ainda mais alterada */
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: red;
+        
+    }
+    button {
+
+        background-color: black;
+        color: white;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    max-width: 1200px; /* Define a largura máxima do contêiner */
+    position: relative; /* Adiciona posição relativa para permitir o posicionamento absoluto da linha */
+}
+
+main, aside {
+    flex: 1; /* Ocupa todo o espaço disponível no contêiner */
+    padding: 20px; /* Adiciona algum espaço interno */
+    margin-left: 1rem;
+}
+
+.linha-vertical {
+    position: absolute; /* Posiciona a linha vertical absolutamente dentro do contêiner */
+    border-left: 2px solid #080808;
+    height: 100%;
+    margin: 0 20px;
+    left: 50%; /* Posiciona a linha na metade do contêiner */
+    transform: translateX(-50%); /* Centraliza a linha vertical */
+}
+aside h2{
+    display: flex;
+    margin-bottom: auto;
+}

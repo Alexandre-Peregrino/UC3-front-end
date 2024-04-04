@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcação de Consultas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Marcação de Consultas</h2>
+    </header>
+    <section class="container">
+        <main>
+            <form id="consultaForm">
+                <div class="input-group">
+                    <label for="nomePaciente">Nome do Paciente:</label><br>
+                    <input type="text" id="nomePaciente" placeholder="Digite o nome do paciente">
+                </div>
+                
+                <div>
+                    <h5>Data da consulta</h5>
+                    <input id="dataConsulta" type="datetime-local">
+                </div>
+                <h5>Especialidades</h5>
+                <select id="especialidade" placeholder="Especialidades">
+                    <option value="cardiologista"></option>
+                    <option value="cardiologista">Cardiologista</option>
+                    <option value="gastroenterologista">Gastroenterologista</option>
+                    <option value="ginecologista">Ginecologista</option>
+                    <option value="pediatra">Pediatra</option>
+                    <option value="ortopedista">Ortopedista</option>
+                    <option value="endocrinologista">Endocrinologista</option>
+                </select>
+                <div id="divButton">
+                    <button id="openCalendarBtn" type="button" onclick="openCalendarBtn">Agendar Consulta</button>
+                </div>
+                <div class="output-group">
+                    <label for="output">Detalhes da Consulta:</label><br>
+                    <textarea id="output" rows="1" readonly></textarea>
+                </div>
+            </form>
+        </main>
+        <div class="linha-vertical"></div> <!-- Linha vertical -->
+            <aside>
+                <!-- Conteúdo do lado esquerdo -->
+                <h2>Verificar Consulta</h2>
+                <label for="nome">Digite o nome do paciente:</label>
+                <input type="text" id="nome">
+                <button id="buscar">Buscar</button>
+                <p id="resultado"></p>
+            </aside>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
